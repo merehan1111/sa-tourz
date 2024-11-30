@@ -49,6 +49,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url('../fonts/opensans-semibold.woff2') format('woff2'),
+  url('../fonts/opensans-semibold.woff') format('woff');;
+  font-weight: normal;
+  font-style: normal;
+}
+/* Example for specific class */
+
 html, body {
   height: 100%;
 }
@@ -60,13 +69,13 @@ body {
   font-style: normal;
   font-weight: normal;
   visibility: visible;
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans Semibold', sans-serif;
   color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #383838;
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans Semibold', sans-serif;
   margin-top: 0;
 }
 
@@ -105,7 +114,7 @@ p:last-child {
 }
 
 p {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Open Sans Semibold', sans-serif;
 }
 
 a, button {
@@ -825,7 +834,7 @@ body.box-body {
 }
 .section-title h2 {
   font-size: 34px;
-  color: #78006E;
+  color: #831AD3;
   margin-top: -4px;
   font-weight: 800;
   text-transform: uppercase;
@@ -841,7 +850,7 @@ body.box-body {
   font-size: 16px;
 }
 .section-title.text-black h2 {
-  color: #78006E;
+  color: #831AD3;
 }
 .section-title.text-black p {
   color: #000;
@@ -855,7 +864,7 @@ body.box-body {
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #78006E;
+  color: #831AD3;
   text-align: center;
 }
 .contact-title p {
@@ -911,16 +920,20 @@ body.box-body {
     left: 0;
     z-index: 99999;
     background: #000;
-
+    padding-top: 10px;
     margin-bottom: 20px;
+    
   }
   .mobile-menu a span{
-   
+   margin-top: 20px;
    margin-right: 10px;
    font-weight: 900;
    font-size: 25px;
     
   }
+  .fa-bars {
+    font-size: 30px;  /* Adjust this value to the size you want */
+}
   .hero-slider{
     padding-top: 15px;
   }
@@ -1686,7 +1699,7 @@ body.box-body {
 }
 
 .overlay-grad-bg::before {
-  background: linear-gradient(0deg, rgb(191 0 255 / 97%) 17%, rgb(124 0 255) 58%);
+  background:#231F20;
   content: "";
   height: 100%;
   left: 0;
@@ -3424,7 +3437,7 @@ textarea:focus {
   padding: 12px 40px;
   text-transform: uppercase;
   font-weight: 600;
-  background: #78006E;
+  background: #831AD3;
   color: #fff;
   border-radius: 30px;
   
@@ -3533,8 +3546,8 @@ textarea:focus {
 }
 
 .download-buttons .button {
-  background: #78006E none repeat scroll 0 0;
-  border-color: #78006E;
+  background: #831AD3 none repeat scroll 0 0;
+  border-color: #831AD3;
   color: #fff;
   margin: 0 15px;
   padding: 15px 30px;
@@ -3545,12 +3558,18 @@ textarea:focus {
   font-size: 16px;
   align-content: center;
   transition: all 0.4s ease-in-out;
+  margin-top: 30px;
+  
 }
 .download-buttons .button i {
   font-size: 18px;
   color: #fff;
   margin-right: 10px;
   transition: all 0.4s ease-in-out;
+ 
+}
+.download-buttons .button  i {
+  padding-left: 2px;
 }
 .download-buttons .button:hover {
   background: rgb(241 0 255 / 84%);
@@ -3650,7 +3669,7 @@ textarea:focus {
 
 /* Custom color for "Contact Us" and "Follow Us" */
 .colorWord, .followhead {
-  color: #78006E;
+  color: #831AD3;
   font-weight: 700;
   font-size: 23px;
   text-align: center;
@@ -3680,7 +3699,7 @@ textarea:focus {
 }
 
 .footer-contact-list a:hover {
-  color: #78006E;
+  color: #831AD3;
 }
 
 /* Social Media Icons Styling */
@@ -3698,7 +3717,7 @@ textarea:focus {
 }
 
 .social-icon:hover {
-  color: #78006E;
+  color: #831AD3;
 }
 
 /* Footer Copyright Section */
@@ -3763,7 +3782,7 @@ textarea:focus {
 /* Style for the language button */
 #languageButton {
   background: none;              
-  border: 2px solid #78006E;     
+  border: 2px solid #831AD3;     
   color: #fff;                
   padding: 3px 5px;             
   font-size: 16px;               
@@ -3827,5 +3846,29 @@ textarea:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow */
 }
 
+/* Ensures images are aligned in one row */
+.threeImage {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds space between the images */
+}
 
+/* Ensures images are responsive */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 
+/* Optional: To ensure the images are evenly sized and responsive */
+.col-lg-3 {
+  padding: 10px;
+}
+
+.strip img{
+  width: 50%;
+  margin-top: 10px;
+}
+/* .fa-brands , .fa-apple{
+  padding-left: 5px;
+  
+} */
